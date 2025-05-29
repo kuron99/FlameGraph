@@ -1130,6 +1130,9 @@ my $inc = <<INC;
 			if (func == null || rect == null)
 				continue;
 
+			if (e.classList.contains("hide"))
+				continue;
+
 			// Save max width. Only works as we have a root frame
 			var w = parseFloat(rect.attributes.width.value);
 			if (w > maxwidth)
